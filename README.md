@@ -111,8 +111,8 @@ src/
 ## Team
 
 * Miriyam Revathi
-* Thiriveedhi Radhika
 * Somula Lakshmi Sowjanya
+* * Thiriveedhi Radhika
 
 ---
 
