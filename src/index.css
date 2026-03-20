@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 220 10% 92%;
+
+    --card: 220 18% 7%;
+    --card-foreground: 220 10% 92%;
+
+    --popover: 220 18% 7%;
+    --popover-foreground: 220 10% 92%;
+
+    --primary: 168 80% 50%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 220 15% 14%;
+    --secondary-foreground: 220 10% 75%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 168 60% 40%;
+    --accent-foreground: 220 20% 4%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --verdict-true: 152 70% 45%;
+    --verdict-true-bg: 152 70% 45%;
+    --verdict-false: 0 72% 55%;
+    --verdict-false-bg: 0 72% 55%;
+    --verdict-unverifiable: 42 90% 55%;
+    --verdict-unverifiable-bg: 42 90% 55%;
+
+    --border: 220 15% 15%;
+    --input: 220 15% 12%;
+    --ring: 168 80% 50%;
+
+    --radius: 0.75rem;
+
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --glow-primary: 0 0 40px hsl(168 80% 50% / 0.15);
+    --glow-true: 0 0 40px hsl(152 70% 45% / 0.2);
+    --glow-false: 0 0 40px hsl(0 72% 55% / 0.2);
+    --glow-unverifiable: 0 0 40px hsl(42 90% 55% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  .glow-true {
+    box-shadow: var(--glow-true);
+  }
+  .glow-false {
+    box-shadow: var(--glow-false);
+  }
+  .glow-unverifiable {
+    box-shadow: var(--glow-unverifiable);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
