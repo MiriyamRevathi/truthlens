@@ -112,7 +112,7 @@ src/
 
 * Miriyam Revathi
 * Somula Lakshmi Sowjanya
-* * Thiriveedhi Radhika
+* Thiriveedhi Radhika
 
 ---
 
